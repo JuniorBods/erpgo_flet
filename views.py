@@ -1,12 +1,12 @@
 from flet import *
-from pages.login import login
+from pages.cadastro_clientes import cadastro_cliente
 
 def views_change(e):
     match e.control.selected_index:
             case 0:
-                login
+                pass
             case 1:
-                print('index 1')
+                cadastro_cliente(page)
             case 2:
                 print('index 2')
             case 3:
